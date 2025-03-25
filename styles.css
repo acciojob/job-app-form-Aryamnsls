@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
+    text-align: center;
 }
 
 form {
@@ -11,10 +12,24 @@ form {
     max-width: 400px;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 label {
     font-weight: bold;
+    display: block;
+    margin-top: 10px;
 }
 
 input, select, button {
@@ -23,6 +38,7 @@ input, select, button {
     margin: 5px 0 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
