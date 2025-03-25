@@ -5,7 +5,7 @@
     <title>Job Application Form</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="post"> <!-- Ensured lowercase "post" -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
@@ -25,6 +25,7 @@
 
         <label for="laptop">Laptop Brands:</label>
         <select id="laptop" name="laptop">
+            <option value="">Select a Brand</option> <!-- Ensured default empty option -->
             <option value="Apple">Apple</option>
             <option value="Asus">Asus</option>
             <option value="HP">HP</option>
@@ -32,7 +33,7 @@
         <br><br>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required>
+        <input type="number" id="age" name="age" required min="1"> <!-- Ensured min value -->
         <br><br>
 
         <label for="dob">Date of Birth:</label>
